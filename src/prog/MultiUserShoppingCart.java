@@ -2,18 +2,24 @@ package prog;
 
 public class MultiUserShoppingCart {
     public static void main(String[] args){
-        System.out.println("Welcome to MultiUser Shopping Cart.");
+        /*
+         * commands to use this:
+         * login <yourusername> => creates a temporary account with that name.
+         * add <itemname>       => adds an item to the current temporary user account
+         * list                 => shows all the items in the cart
+         * save                 => to save current session into the 'database'
+         * users                => to print out all the users in the 'database'
+         * exit                 => close the current user session. all unsaved data is lost.
+         */
 
-        //creates a new shopping cart and assigns it to a variable named cart
+        //creates a new shopping cart object
+        //this contains the loop for asking for commands too
         ShoppingCartDB cart = new ShoppingCartDB("cardb");
 
-        //the function we need for this cart
-
-        //creates the 
-        cart.setup();
+        //opens the shopping cart to accept commands
+        //allows us to control where we want the cart to start taking commands. 
         cart.startShell(); 
         
-        //default folder: "db"
-        //cart loop
+
     }
 }
